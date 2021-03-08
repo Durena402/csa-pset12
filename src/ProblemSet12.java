@@ -1,12 +1,25 @@
 import java.util.ArrayList;
 
 public class ProblemSet12 {
+    public static void main(String[] args) {
 
-    public long factorial(int n) {
+        int [] data = {1,2,11};
 
+        System.out.println(factorial(3));
+    }
+    public static long factorial(int n) {
+        if (n < 0){
+            return -1;
+        } else{
+            if( n == 0){
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
     }
 
-    public long fibonacci(int n) {
+    /*public long fibonacci(int n) {
 
     }
 
@@ -40,5 +53,5 @@ public class ProblemSet12 {
 
     public int strDist(String text, String sub) {
 
-    }
+    }*/
 }
