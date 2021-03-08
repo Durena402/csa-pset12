@@ -1,13 +1,8 @@
 import java.util.ArrayList;
 
 public class ProblemSet12 {
-    public static void main(String[] args) {
 
-        int [] data = {1,2,11};
-
-        System.out.println(factorial(3));
-    }
-    public static long factorial(int n) {
+    public long factorial(int n) {
         if (n < 0){
             return -1;
         } else{
@@ -19,7 +14,7 @@ public class ProblemSet12 {
         }
     }
 
-    public static long fibonacci(int n) {
+    public long fibonacci(int n) {
         long fib = 0;
         if (n < 0){
             return -1;
@@ -32,7 +27,7 @@ public class ProblemSet12 {
         return fib;
     }
 
-    public static long triangle(int rows) {
+    public long triangle(int rows) {
         long row;
         if( rows < 0){
             return -1;
@@ -45,7 +40,7 @@ public class ProblemSet12 {
         return row;
     }
 
-    public static long sumDigits(int n) {
+    public long sumDigits(int n) {
         long sum;
         if (n < 0){
             return -1;
@@ -59,7 +54,7 @@ public class ProblemSet12 {
         return sum;
     }
 
-    public static long powerN(int base, int exponent) {
+    public long powerN(int base, int exponent) {
         long value;
         if( base < 1 || exponent < 1){
             return -1;
@@ -72,7 +67,7 @@ public class ProblemSet12 {
         return value;
     }
 
-    public static String changeXY(String text) {
+    public String changeXY(String text) {
         if( text == null){
             return null;
         } else {
@@ -86,9 +81,9 @@ public class ProblemSet12 {
         }
     }
 
-    public static int array11(int[] data, int index) {
+    public int array11(int[] data, int index) {
 
-        if(data == null || index < 0|| index >= data.length ){
+        if(data == null || index < 0 || index >= data.length ){
             return -1;
         } else {
             if(index >= data.length){
@@ -101,7 +96,7 @@ public class ProblemSet12 {
         }
     }
 
-    public static int strCount(String text, String sub) {
+    public int strCount(String text, String sub) {
         if(text == null || sub == null || sub.length() == 0){
             return -1;
         }
@@ -114,7 +109,7 @@ public class ProblemSet12 {
         return strCount(text.substring(1), sub);
     }
 
-    public static boolean strCopies(String text, String sub, int n) {
+    public boolean strCopies(String text, String sub, int n) {
 
         if(text == null || sub == null || sub.length() == 0 || n < 0 || text.length() < sub.length()){
             return false;
@@ -129,7 +124,7 @@ public class ProblemSet12 {
         return strCopies(text.substring(1), sub, n);
     }
 
-    public static int strDist(String text, String sub) {
+    public int strDist(String text, String sub) {
         if(text == null || sub == null || sub.length() == 0){
             return -1;
         }
